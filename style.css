@@ -1,0 +1,95 @@
+/*Starting styles */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+body{
+    background-color: black;
+    color: seashell;
+}
+
+header{
+    margin-top: 1rem;
+    text-align: center;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+#playerTurn{
+    font-size: 2rem;
+}
+
+#main-content{
+    position: relative;
+    top: 2rem;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+#cards-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+}
+
+#scores{
+    text-align: center;
+}
+
+#refresh{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+/*Cards styles */
+.muster{
+    display: none !important;
+}
+
+.card{
+    width: 8rem;
+    height: 8rem;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.facedown{
+    background-color: rgb(135, 135, 35);
+}
+
+.facedown .value{
+    display: none;
+}
+
+.faceup{
+    background-color: seashell;
+}
+
+.value{
+    font-size: 3rem;
+    color: black;
+}
+
+.hidden{
+    visibility: hidden;
+    /*To prevent clicking but still being in the flow of a document */
+    pointer-events: none;
+}
+
+.unclickable{
+    pointer-events: none;
+}
